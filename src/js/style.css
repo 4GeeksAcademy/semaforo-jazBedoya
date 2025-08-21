@@ -1,0 +1,38 @@
+.semaforo {
+  background: black;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.luz {
+  width: 70px;
+  height: 70px;
+  margin: 10px 0;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: opacity 0.3s, box-shadow 0.3s;
+}
+
+.luz.red {
+  background: red;
+}
+.luz.yellow {
+  background: yellow;
+}
+.luz.green {
+  background: green;
+}
+.luz.purple {
+  background: purple;
+}
+
+/* cuando está activa */
+.luz.activo {
+  opacity: 1;
+  box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.6);
+}
